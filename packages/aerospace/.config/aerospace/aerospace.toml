@@ -1,6 +1,3 @@
-# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-# ! REMEMBER ABOUT POLISH LETTERS !
-# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
 config-version = 2
 start-at-login = true
 enable-normalization-flatten-containers = true
@@ -26,7 +23,7 @@ accordion-padding = 30
   inner.vertical =   8
   outer.left =       8
   outer.bottom =     8
-  outer.top =        [{ monitor."built-in.*" = 2 }, 8]
+  outer.top =        [{ monitor."built-in.*" = 0 }, 8]
   outer.right =      8
 
 ##################################################
@@ -37,41 +34,9 @@ accordion-padding = 30
   ctrl-alt-cmd-l         = 'focus --boundaries all-monitors-outer-frame down'
   ctrl-alt-cmd-semicolon = 'focus --boundaries all-monitors-outer-frame right'
 
-  ctrl-alt-cmd-m         = 'move left'
-  ctrl-alt-cmd-comma     = 'move up'
-  ctrl-alt-cmd-period    = 'move down'
-  ctrl-alt-cmd-slash     = 'move right'
-
-  ctrl-alt-cmd-u         = 'join-with left'
-  ctrl-alt-cmd-i         = 'join-with up'
-  ctrl-alt-cmd-o         = 'join-with down'
-  ctrl-alt-cmd-p         = 'join-with right'
-
-  ctrl-alt-cmd-y = 'layout horizontal vertical'
-  ctrl-alt-cmd-h = 'layout tiles accordion'
-  ctrl-alt-cmd-n = 'layout floating tiling'
-
-  ctrl-alt-cmd-g = 'macos-native-fullscreen'
-
-  ctrl-alt-cmd-w = "workspace 🍷"
-  ctrl-alt-cmd-e = "workspace 🍸"
-  ctrl-alt-cmd-r = "workspace 🍹"
-  ctrl-alt-cmd-s = "workspace 🦀"
-  ctrl-alt-cmd-d = "workspace 🦋"
-  ctrl-alt-cmd-f = "workspace 🪶"
-
-  ctrl-alt-cmd-shift-w = "move-node-to-workspace 🍷"
-  ctrl-alt-cmd-shift-e = "move-node-to-workspace 🍸"
-  ctrl-alt-cmd-shift-r = "move-node-to-workspace 🍹"
-  ctrl-alt-cmd-shift-s = "move-node-to-workspace 🦀"
-  ctrl-alt-cmd-shift-d = "move-node-to-workspace 🦋"
-  ctrl-alt-cmd-shift-f = "move-node-to-workspace 🪶"
-
   # disable hide application or other macOS shortcuts
   cmd-h = []
   cmd-alt-h = []
-
-  ctrl-alt-cmd-shift-c = 'reload-config'
 
   ctrl-alt-cmd-shift-z = 'mode chocofi'
   ctrl-alt-cmd-shift-x = 'mode resize-main'
@@ -84,41 +49,9 @@ accordion-padding = 30
   ctrl-alt-cmd-h = 'focus down'
   ctrl-alt-cmd-i = 'focus right'
 
-  ctrl-alt-cmd-o = 'move left'
-  ctrl-alt-cmd-y = 'move down'
-  ctrl-alt-cmd-k = 'move up'
-  ctrl-alt-cmd-j = 'move right'
-
-  ctrl-alt-cmd-quote = 'join-with left'
-  ctrl-alt-cmd-u     = 'join-with up'
-  ctrl-alt-cmd-p     = 'join-with down'
-  ctrl-alt-cmd-q     = 'join-with right'
-
-  ctrl-alt-cmd-semicolon = 'layout horizontal vertical'
-  ctrl-alt-cmd-period    = 'layout tiles accordion'
-  ctrl-alt-cmd-comma     = 'layout floating tiling'
-
-  ctrl-alt-cmd-f = 'macos-native-fullscreen'
-
-  ctrl-alt-cmd-s = "workspace 🍷"
-  ctrl-alt-cmd-n = "workspace 🍸"
-  ctrl-alt-cmd-t = "workspace 🍹"
-  ctrl-alt-cmd-w = "workspace 🦀"
-  ctrl-alt-cmd-m = "workspace 🦋"
-  ctrl-alt-cmd-d = "workspace 🪶"
-
-  shift-ctrl-alt-cmd-s = "move-node-to-workspace 🍷"
-  shift-ctrl-alt-cmd-n = "move-node-to-workspace 🍸"
-  shift-ctrl-alt-cmd-t = "move-node-to-workspace 🍹"
-  shift-ctrl-alt-cmd-w = "move-node-to-workspace 🦀"
-  shift-ctrl-alt-cmd-m = "move-node-to-workspace 🦋"
-  shift-ctrl-alt-cmd-d = "move-node-to-workspace 🪶"
-
   # disable hide application or other macOS shortcuts
   cmd-h = []
   cmd-alt-h = []
-
-  ctrl-alt-cmd-shift-c = 'reload-config'
 
   ctrl-alt-cmd-shift-z = 'mode main'
   ctrl-alt-cmd-shift-x = 'mode resize-chocofi'
