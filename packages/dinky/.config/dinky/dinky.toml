@@ -1,0 +1,66 @@
+start-at-login = true
+workspaces = 6
+default-layout = 'tiles'
+default-tiling = true
+follow-app-activation = true
+float-windows-without-fullscreen = true
+
+[borders]
+width = 4
+active-color = '#4E6E7C'
+inactive-color = '#00000000'
+
+[accordion]
+padding = 30
+orientation = 'auto'
+
+[master]
+size = 0.6
+side = 'left'
+
+[gaps]
+inner = { horizontal = 8, vertical = 8 }
+outer = { top = 8, bottom = 8, left = 8, right = 8 }
+
+[display.built-in]
+gaps.outer.top = 2
+
+[workspace-to-display]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = ['secondary', 'main']
+5 = ['secondary', 'main']
+6 = ['secondary', 'main']
+
+[animations]
+enabled = true
+duration-ms = 150
+
+[modifiers]
+alt = 'left'
+ctrl = 'left'
+cmd = 'left'
+shift = 'left'
+
+[mode.main]
+ctrl-alt-cmd-shift-z = 'mode chocofi'
+cmd-h = 'reload-config'
+cmd-alt-h = 'retile'
+ctrl-alt-cmd-j         = 'focus left'
+ctrl-alt-cmd-k         = 'focus up'
+ctrl-alt-cmd-l         = 'focus down'
+ctrl-alt-cmd-semicolon = 'focus right'
+
+[mode.chocofi]
+ctrl-alt-cmd-shift-z = 'mode main'
+cmd-h = 'reload-config'
+cmd-alt-h = 'retile'
+ctrl-alt-cmd-a = 'focus left'
+ctrl-alt-cmd-e = 'focus up'
+ctrl-alt-cmd-h = 'focus down'
+ctrl-alt-cmd-i = 'focus right'
+
+[[rules]]
+app-id = 'com.mikkelm.Tuna'   # Or regex matching Tuna's app-id
+run = 'layout floating'
