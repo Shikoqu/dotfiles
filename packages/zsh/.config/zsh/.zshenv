@@ -14,12 +14,14 @@ export FZF_CTRL_R_OPTS='--preview "echo {}" --preview-window down:3:hidden:wrap 
 # uv
 export PATH="$HOME/.local/bin:$PATH"
 
-# npm
-export NPM_CONFIG_INIT_MODULE="$XDG_CONFIG_HOME/npm/config/npm-init.js"
-export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
-export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
-
 # rust
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 [[ -f "$XDG_DATA_HOME/cargo/env" ]] && source "$XDG_DATA_HOME/cargo/env"
+
+# other xdg
+export NPM_CONFIG_INIT_MODULE="$XDG_CONFIG_HOME/npm/config/npm-init.js"
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
+export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
