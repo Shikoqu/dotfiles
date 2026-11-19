@@ -6,8 +6,8 @@ follow-app-activation = true
 float-windows-without-fullscreen = true
 
 [borders]
-width = 4
-active-color = '#4E6E7C'
+# width = 4
+# active-color = '#ccda47'
 inactive-color = '#00000000'
 
 [accordion]
