@@ -34,5 +34,5 @@ romkatv/powerlevel10k
 # junegunn/fzf path:bin kind:path
 
 # 8. zoxide & eza ???
-# z-shell/zsh-eza # install via HomeBrew
+z-shell/zsh-eza # install via HomeBrew
 # ajeetdsouza/zoxide # better to provide `--cmd cd` to ` eval "$(zoxide init zsh --cmd cd)"`
