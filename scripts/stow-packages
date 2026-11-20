@@ -13,11 +13,9 @@ if (($# == 0)); then
   exit 2
 fi
 
-# MacOS Finder litters these into every directory, where they become Stow conflicts.
-find "$root" -name .DS_Store -print -delete
-
 exec stow \
   --no-folding \
   --dir="$root/packages" \
   --target="$HOME" \
+  --ignore='\.DS_Store' \
   "$@"
